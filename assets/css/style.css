@@ -1,0 +1,282 @@
+*{
+    margin: auto;
+}
+body{
+    background-color: #781FB5;
+    color: #808B96;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2,h3,h4{
+    color: #273746;
+}
+.cabecera{
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+.cabecera-img img{
+width: 40%;
+height: 140px;
+border-radius: 50%;
+border-color:#000000 ;
+border-width: 3px;
+border-style: solid;
+
+}
+.cabecera-text {
+    color: #E8E3EC;
+    font-style: oblique;
+    margin-top: 3%;
+}
+.cabecera-text p{
+    padding-top: 6%;
+    width: 80%;
+}
+main{
+    background-color: #E8E3EC;
+    width: 90%;
+    padding-bottom: 6%; 
+}
+.principal-img{
+    width: 90%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+.principal-img img{
+    width: 50%;
+    border-radius: initial;
+    border-radius: 6%;
+}
+.principal-text p{
+    width: 80%;
+    text-align: justify;
+}
+.boton{
+    width: 100px;
+    padding: 16px;
+    border: 1px outset #AEB6BF;
+    margin-top: 5%;
+    color: #626567;
+}
+.pinturas h2{
+    margin-top: 20%;
+    text-align: center;
+}
+.obras{
+    margin-top: 15%;
+    text-align: center;
+}
+.obra-img img{
+    width: 90%;
+    border-radius: 50%;
+}
+.obra-text {
+    padding-top: 5%;
+}
+.obra-text hr{
+    width: 30%;
+    margin-bottom: 3%;
+}
+.observador h2{
+    margin-top: 20%;
+    text-align: center;
+}
+.ciencias{
+    margin-top: 15%;
+    text-align: center;
+}
+.ciencias-img img{
+    width: 90%;
+    border-radius: 50%;
+}
+.ciencias-text {
+    padding-top: 5%;
+}
+.ciencias-text hr{
+    width: 30%;
+    margin-bottom: 3%;
+}
+article{
+    margin-top: 10%;  
+}
+.h2{
+    text-align: center;
+    color: #E8E3EC;
+}
+.desplegable{
+    padding-top: 6%;
+    width: 80%;
+    margin: auto;
+}
+.desplegable a{
+    background-color: #210138;
+    display: block;
+    text-decoration: none;
+    line-height: 2.5;
+    color: #E8E3EC;
+    padding-left: 7%;  
+}
+.desplegable p{
+    padding: 7%;   
+}
+#medicina, #estudios, #inventos, #esculturas, #relaciones{
+    display: none;
+}
+#medicina:target, #estudios:target ,#inventos:target, #esculturas:target, #relaciones:target {
+   display: block;
+}
+.cerrar:target{
+    display: none;
+}
+.cerrar{
+    text-align: center;
+    width: 60px;
+    border: 1px solid #626567;    
+    color: #626567;
+}
+footer{
+    background-color: #9040CD;
+    text-align: center;
+    margin-top: 10%;
+    line-height: 40px;
+}
+.mas{
+    text-align: center;
+    width: 65px;
+    border: 1px solid #626567;    
+    color: #626567;
+}
+.mas, .cerrar{
+    display: inline-block;
+}
+
+/*tamaño medio*/
+@media (min-width:501px) and (max-width: 670px){
+    .cabecera-img img{
+        width: 40%;
+        height: 170px;      
+        }
+}
+
+/*medio a grande*/
+@media (min-width:671px) and (max-width: 1000px) {
+    .cabecera-img img{
+        width: 40%;
+        height: 250px;        
+        }
+        .cabecera-text {
+            font-size: x-large;
+        }
+        h2,h3,h4{
+            font-size: x-large;
+        }        
+        .pinturas h2{
+            padding-top: 5%;
+        }
+        .obras{
+           width: 45%;
+        }
+        .observador h2{
+            padding-bottom: 6%;
+        }
+        .ciencias{
+            width: 48%;
+            background-color: #E8E3EC;
+            margin-top: 0%;
+        }     
+        #c3, #c4{
+            display: inline-block;
+        }
+        #c1, #c2{
+            display: inline-block;
+        }
+        
+        
+}
+
+/*XL*/
+@media (min-width:1001px) {
+    
+    .cabecera{
+        margin-top: 10%;
+    }
+    .cabecera-img img{
+        width: 20%;
+        height: 250px;    
+    }
+    .cabecera-text {
+        font-size: xx-large;
+    }
+    h2,h3,h4{
+        font-size: xx-large;
+    }
+    main{
+        background-color: #781FB5;
+    }
+    .principal{
+        width: 95%;
+        background-color: #E8E3EC;             
+    }
+    .principal-img{
+        width: 63%;
+        padding-bottom: 10%;
+        background-color: #a52a2a;
+    }
+    .principal-text{
+        width: 35%;
+        padding-top: 6%;
+    }
+    .principal-img, .principal-text{
+        display: inline-block;
+    }
+    #btn-1{
+        display: block;
+    }
+    .pinturas{
+        background-color: #E8E3EC;
+        width: 95%;
+        padding-bottom: 2%;
+    }
+    .pinturas h2{
+        padding-top: 3%;
+    }
+    .obras{
+        width: 90%;
+        border: 1px solid black;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-top: 2%;
+    }
+    .obra-img{
+        width: 40%;
+    }
+    .obra-text{
+        width: 40%;
+    }
+    .obra-img, .obra-text{
+        display: inline-block;
+    }
+    .observador{
+        background-color: #E8E3EC;
+        width: 95%;
+    }
+    .ciencias{
+        width: 23%;
+        margin-top: 2%;
+    }
+    #c1, #c2, #c3, #c4{
+        display: inline-block;
+    }
+      
+        
+        
+}
+
+
+
+
+
